@@ -1,0 +1,26 @@
+<div>
+    <h1>Create Product</h1>
+    <form (ngSubmit)="submitForm()" #createForm="ngForm">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" ng-model="form.tenSanPham" 
+             id="tenSanPham" class="form-control" maxlength="20">
+        </div>
+        <div class="form-group">
+            <label>Price</label>
+            <input type="text" ng-model="form.giaBan" 
+              id="giaBan" class="form-control">
+        </div>     
+        <div class="form-group">
+            <label>Description</label>
+            <textarea class="form-control" ng-model="form.moTa" 
+            id="moTa" rows="3" maxlength="100"></textarea>
+        </div>
+        <div class="form-group"> 
+            <label>hinh</label>
+            <input type="file" ng-model="form.hinh" 
+             id="hinh" class="form-control">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>

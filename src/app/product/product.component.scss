@@ -1,0 +1,24 @@
+.flex-container{
+    margin-top:5em;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.flex-item{
+    margin:10px;
+    
+}
+.card{
+    align-items: center;
+    justify-content: center;
+}
+p.card-text{
+    text-align: center;
+}
+.card a{
+    margin-left: 4.2em;
+}
+.btn_create{
+    float: right;
+    margin-right: 5em;
+}

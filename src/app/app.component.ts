@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MobileStore';
+  constructor(private router: Router) { }
+
+  moveToLogin(){
+    this.router.navigateByUrl('/login');
+  }
+  ngOnInit( ){
+    this.moveToLogin();
+   }
 }

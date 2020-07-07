@@ -1,0 +1,17 @@
+<app-header  title="Products" subtitle="All products are avalible" button="Logout"></app-header>
+<button type="button" class="btn_create btn btn-outline-primary" 
+    routerLink="/product/create" >Create new product</button>
+<div class="flex-container">
+  <div class="flex-item" *ngFor="let product of products">
+    <div class="card" style="width: 18rem; height: 500px;">
+        <h5 class="card-title">{{product.tenSanPham}}</h5>
+        <img class="card-img-top" src="../../assets/{{product.hinh}}" alt="Card image cap">
+        <div class="card-body"> 
+          <p class="card-text">{{product.moTa}}</p>
+          <p class="card-text">{{product.giaBan}}</p>
+          <a href="" class="btn btn-primary">Hốt dô giỏ</a>
+        </div>
+      </div>
+    </div>
+</div>
+
